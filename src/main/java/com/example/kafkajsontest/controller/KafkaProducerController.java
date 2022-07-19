@@ -5,7 +5,9 @@ import com.example.kafkajsontest.service.KafkaProducerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 
+@RestController
 public class KafkaProducerController {
 
     private final KafkaProducerService producerService;
